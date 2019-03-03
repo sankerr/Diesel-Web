@@ -1,3 +1,4 @@
+
 body, html{
     font-size: 100%;
     font-family: "Helvetica", sans-serif;
@@ -91,13 +92,17 @@ nav{
 }
 
 #playlist{
-		text-align: center;
+	text-align: center;
 }
 
 #like h1{
 	text-align: center;
 	background: #444;
 	color: #ddd;
+}
+
+#like{
+	text-align: center;
 }
 
 #qrcoder h1{
@@ -118,6 +123,37 @@ nav{
 	color: #ddd;
 }
 
+#contact{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.form{
+	margin-top: 50px;
+	transition: all 4s ease-in-out;
+}
+.form-control{
+	width: 600px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+.submit{
+	background: #ff5722;
+	text-align: center;
+	border-color: transparent;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+}
+.submit:hover{
+	background-color: #f44336;
+	cursor: pointer;
+}
 /*styling logo*/
 
 nav div:first-child{
@@ -133,6 +169,7 @@ nav div:first-child h1{
 nav div:first-child h1, nav ul{
     margin:0;
 }
+  
 
 /*Styling for larger devices*/
 
@@ -212,6 +249,10 @@ nav div:first-child h1, nav ul{
     	background: #222;
     	color: #ddd;
     }
+	
+	#like{
+		text-align: center;
+	}
     
     #qrcoder h1{
     	text-align: center;
@@ -230,5 +271,4 @@ nav div:first-child h1, nav ul{
     	background: #222;
     	color: #ddd;
     }
-   
-}
+}	
