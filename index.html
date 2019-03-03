@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<nav>
+<div id="menu">
+<ul>
+<h1><img src="G1365886.png" alt="logo"></a></h1>
+<li><a href="#about">About Me</a></li>
+<li><a href="#photos">My Photos</a></li>
+<li><a href="#playlist">My Playlist</a></li>
+<li><a href="#like">Like</a></li>
+<li><a href="#qrcoder">QR code</a></li>
+<li><a href="#spa">Q&A</a></li>
+<li><a href="#contact">Contact Me</a></li>
+</ul>
+</div>
+</nav>
+<section id="about" class="section">
+<br/>
+<br/>
+<h1>About Me</h1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+about me
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="photos" class="section">
+<br/>
+<br/>
+<h1>Photos</h1>
+<div id=containar>
+<img class="slides" src="slider/1.jpg"/>
+<img class="slides" src="slider/2.jpg"/>
+<img class="slides" src="slider/3.jpg"/>
+<img class="slides" src="slider/4.jpg"/>
+<img class="slides" src="slider/5.jpg"/>
+<img class="slides" src="slider/6.jpg"/>
+<button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094</button>
+<button class="btn" onclick="plusIndex(1)" id="btn2">&#10095</button>
+</div>
+</section>
+
+<section id="playlist" class="section">
+<br/>
+<br/>
+<h1>Playlist</h1>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qkuu0Lwb5EM?controls=0" frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section id="like" class="section">
+<br/>
+<br/>
+<h1>Give Me Like</h1>
+<br/>
+<div 
+	class="fb-like" data-href="https://sankerr.github.io/Diesel-Web/" data-layout="button_count" 
+	data-action="like" data-size="large" data-show-faces="true" data-share="true" text-align="center">
+</div>
+<br/>
+</section>
+
+<section id="qrcoder" class="section">
+<br/>
+<br/>
+<h1>QR Code</h1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+scan my code
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="spa" class="section">
+<br/>
+<br/>
+<h1>Q&A</h1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+ans
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="contact" class="section">
+<h1>Contact Me</h1>
+<div class="contact-form">
+	<form id="contact-form" method="post" action="">
+		<input name="name" id="inputName" type="text" class="form-control" placeholder="Your Name" required><br>
+		<input name="email" id="inputEmail" type="em" class="form-control" placeholder="Your Email" required><br>
+		<textarea name="message" id="inputMessage" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+		<input name="submit" type="submit" class="form-control submit" value="SEND MESSAGE">
+	</form>
+</div>
+</section>
+
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+	
+ <script>
+	var index = 1;
+	function plusIndex(n){
+		index = index + n;
+		showImage(index);
+	}
+	
+	showImage(1);
+	
+	function showImage(n){
+		var i;
+		var x = document.getElementsByClassName("slides");
+		if(n > x.length){ index = 1}
+		if(n < 1){ index = x.length }
+		for(i=0;i<x.length;i++){
+			x[i].style.display = "none"
+		}
+		x[index - 1].style.display = "block"
+	}
+ </script>
+ 
+<div id="fb-root"></div>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+ 
+</body>
+</html>
